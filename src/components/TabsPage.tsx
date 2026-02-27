@@ -13,9 +13,7 @@ export const TabsPage: React.FC<Props> = ({ tabs }) => {
 
   return (
     <>
-      <h1 className="title">
-        {activeTab ? `Selected tab is ${activeTab.title}` : 'Tabs page'}
-      </h1>
+      <h1 className="title">Tabs page</h1>
       <Tabs tabs={tabs} activeTabId={tabId} />
       <div className="block" data-cy="TabContent">
         {activeTab ? activeTab.content : 'Please select a tab'}
